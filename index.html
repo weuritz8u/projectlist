@@ -12,7 +12,12 @@
 
 <body>
     <!-- Header -->
-    <header></header>
+    <header>
+        <nav>
+            <p><a href="https://github.com/weuritz8u/projectlist">Source</a></p>
+            <p><a href="https://github.com/weuritz8u/projectlist/blob/main/src/projectlist.md">Project List</a></p>
+        </nav>
+    </header>
 
     <!-- Main Conatiner -->
     <main>
@@ -20,11 +25,33 @@
 
         <button onclick="display_list()"><b>Display Project List</b></button>
 
-        <div class="table_container"><table id="csvTable"></table></div>
+        <div id="table_paste"></div>
+
+        <div class="button_row">
+            <div class="dropdown">
+                <button class="dropbtn">Menü</button>
+                <div class="dropdown-content">
+                    <a href="#">Option 1</a>
+                    <a href="#">Option 2</a>
+                    <a href="#">Option 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Menü</button>
+                <div class="dropdown-content">
+                    <a href="#">lol</a>
+                    <a href="#">lol2</a>
+                    <a href="#">lol3</a>
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <!-- Footer -->
-    <footer></footer>
+    <footer>
+        <p>Made with ❤️ and Github Pages</p>
+    </footer>
 
     <script defer src="src/sort.js"></script>
 </body>

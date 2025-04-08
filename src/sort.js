@@ -9,7 +9,7 @@ visualnovel-march-2025,GDScript,weuritz8u
 `;
 
 
-// Datei hochladen und als CSV einlesen
+// to read the csv table
 document.getElementById('csvFileInput').addEventListener('change', function(event) {
     const file = event.target.files[0];
     if (!file) return;
@@ -22,11 +22,11 @@ document.getElementById('csvFileInput').addEventListener('change', function(even
     reader.readAsText(file);
 });
 
-// Funktion zum Erstellen der HTML-Tabelle aus CSV-Text
+
 function createTableFromCSV(csvText) {
     const rows = csvText.trim().split("\n").map(row => row.split(","));
     const table = document.getElementById("csvTable");
-    table.innerHTML = ""; // Leeren der Tabelle
+    table.innerHTML = "";
 
     rows.forEach((row, rowIndex) => {
         const tr = document.createElement("tr");
@@ -41,7 +41,8 @@ function createTableFromCSV(csvText) {
     });
 }
 
-// Daten aus der `list`-Variable in die Tabelle laden
 function display_list() {
+    document.getElementById('table_paste').innerHTML = '<div class="table_container"><table id="csvTable"></table></div>'
+
     createTableFromCSV(list);
 }

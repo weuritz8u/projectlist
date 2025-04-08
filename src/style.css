@@ -1,5 +1,6 @@
 /* written by Shadowdara */
 
+/* generell unset */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,7 +8,28 @@
     font-family: Arial, sans-serif;
 }
 
-main {}
+header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    margin: 0px;
+    padding: 1rem;
+    background-color: #191919;
+    display: block;
+    unicode-bidi: isolate;
+}
+
+nav {
+    margin-left: 30%;
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+}
+
+nav p {
+    margin: 0;
+}
 
 body {
     background: linear-gradient(135deg, #1e3c72, #2a5298);
@@ -21,7 +43,18 @@ body {
     padding: 20px;
 }
 
-footer {}
+main {
+
+}
+
+footer {
+    margin: 0px;
+    padding-bottom: 1rem;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #191919;
+}
 
 h2 {
     margin-bottom: 20px;
@@ -92,7 +125,7 @@ button {
 }
 
 button:hover {
-    background-color: #e68900;
+    background-color: #ff9200;
 }
 
 p {
@@ -103,4 +136,58 @@ p {
 
 a {
     color: white;
+}
+
+/* Stil für den Button */
+.dropbtn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Container für das Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown-Menü */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);  /* Menü wird mittig ausgerichtet */
+    z-index: 1;
+}
+
+/* Links im Dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    border-radius: 16px;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    margin: 7px
+}
+
+/* Hover-Effekt für die Links */
+.dropdown-content a:hover {
+    background-color: #ffb163;
+}
+
+/* Dropdown anzeigen, wenn die Maus über dem Container ist */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Button-Hover-Effekt */
+.dropdown:hover .dropbtn {
+    background-color: #2980b9;
 }
