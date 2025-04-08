@@ -19,20 +19,15 @@ def read_list(path):
             o.writelines(lines)
             o.write('`;')
 
-    except:
-        print('Error: No write Access')
-        sys.exit(1)
-
-    try:
         with open(os.path.join(path, output_file2), 'wt', encoding = 'UTF-8') as h:
             h.write('<ul><li>')
             for e in lines:
                 lines = lines.split(",")[0]
                 h.write(lines[e])
                 h.write('</li>')
-            h.write('</ul>')
+             h.write('</ul>')
 
-    expect:
+    except:
         print('Error: No write Access')
         sys.exit(1)
 
