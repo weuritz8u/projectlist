@@ -37,6 +37,23 @@
  <!-- Godot-Save-Template --> <a href="https://github.com/weuritz8u/Godot-Save-Template"><img src="https://github-readme-stats.vercel.app/api/pin/?username=weuritz8u&theme=midnight-purple&repo=Godot-Save-Template" alt="Godot-Save-Template"></a>
 </div>
 
+<!--
+
+<h3>Games</h3>
+
+<div>
+ <-- -->
+</div>
+
+
+<h3>Website</h3>
+
+<div>
+ <-- -->
+</div>
+
+-->
+
 <br>
 
 <h4><b><i>The is although not full because i will only list projects here which are already finished or usable</i></b></h4>
