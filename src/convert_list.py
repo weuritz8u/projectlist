@@ -2,19 +2,38 @@
 
 # SCRIPTS ARE ONLY FOR IMPORTING!!!
 
+# files required:
+
 import os
-import sys
 import configparser
 
 # read the csv table and convert it to a multiple line javascript variable
-def read_list(path):
+def create_files(path):
+    # variables
+    theme = 'midnight-purple'
+
+    ini_info = 'file_info.ini'
+
+    template1 = 'template_1.tp'
+    template2 = 'template_2.tp'
+    template3 = 'template_dev_info.tp'
+
+    input_file = 'project_list.csv'
+
+    output_file = 'del_project_list_js_var.txt'
+    output_file2 = 'del_project_list_index.md'
+    output_file3 = 'del_project_list_img.md'
+    output_file4 = 'del_project_list.txt'
+    output_file5 = 'project_list.md'
+    output_file6 = 'dev_info.md'
+
+    # open the files
     try:
         with open(os.path.join(path, input_file), 'r', encoding = 'UTF-8') as r:
             lines = r.readlines()
 
     except FileNotFoundError as e:
-        print(f"Error: {e}")
-        sys.exit(1)
+        print(f"Error: {e}: {input_file}")
 
     try:
         with open(os.path.join(path, output_file), 'wt', encoding = 'UTF-8') as o:
@@ -60,46 +79,31 @@ def read_list(path):
 
         a.write(d_content)
 
-        file_info = configparser.ConfigParser()
-        file_info.read(os.path.join(path, info), encoding = 'UTF-8')
+        file_info = configparser.ConfigParser(allow_no_value=True)
+        file_info.read(os.path.join(path, ini_info), encoding = 'UTF-8')
 
-        f = open(os.path.join(path, output_file6), 'wt', encoding = 'UTF-8')
+        k = open(os.path.join(path, template3), 'r', encoding = 'UTF-8')
 
-        for section in file_info.sections():
-            f.write(f'### [{section}]\n')
+        with open(os.path.join(path, output_file6), "w", encoding="UTF-8") as g:
+            g.write(k.read())
+            g.write('\n')
 
-            for key, value in file_info.items(section):
-                f.write(f'- {value}\n')
-            
-            f.write('\n')
+            for section in file_info.sections():
+                g.write(f"### [{section}]\n")
+
+                for item in file_info.options(section):
+                    g.write(f"- {item}\n")
+
+                g.write("\n")
+        
+        a.close()
+        c.close()
+        d.close()
+        p.close()
+        j.close()
+        h.close()
+
+        print("Created all files successfully!")
 
     except:
         print('Error: No write Access')
-        sys.exit(1)
-
-# run on execution
-if __name__ == '__main__':
-
-    theme = 'midnight-purple'
-
-    info = 'file_info.ini'
-
-    template1 = 'template_1.md'
-    template2 = 'template_2.md'
-
-    input_file = 'project_list.csv'
-
-    output_file = 'del_project_list_js_var.txt'
-    output_file2 = 'del_project_list_index.md'
-    output_file3 = 'del_project_list_img.md'
-    output_file4 = 'del_project_list.txt'
-    output_file5 = 'del_project_list.md'
-    output_file6 = 'file_info.md'
-
-    path = os.path.dirname(os.path.abspath(__file__))
-
-    read_list(path)
-
-    print("Created the file successfully!")
-
-    sys.exit(0)

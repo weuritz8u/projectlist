@@ -6,4 +6,4 @@
 *.csv linguist-documentation=false
 *.txt linguist-detectable=true
 *.txt linguist-documentation=false
-*.txt linguist-language=INI
+*.tp linguist-language=txt
