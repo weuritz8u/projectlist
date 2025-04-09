@@ -9,6 +9,8 @@ visualnovel-march-2025,GDScript,weuritz8u
 `;
 
 
+// script written by Shadowdara
+
 // to read the csv table
 document.getElementById('csvFileInput').addEventListener('change', function(event) {
     const file = event.target.files[0];
