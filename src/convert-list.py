@@ -17,15 +17,18 @@ def read_list(path):
         with open(os.path.join(path, output_file), 'wt', encoding = 'UTF-8') as o:
             o.write('const list = `')
             o.writelines(lines)
-            o.write('`;')
+            o.write('`;\n')
 
         with open(os.path.join(path, output_file2), 'wt', encoding = 'UTF-8') as h:
-            h.write('<ul><li>')
-            for e in lines:
-                lines = lines.split(",")[0]
-                h.write(lines[e])
-                h.write('</li>')
-             h.write('</ul>')
+            h.write('<ul>\n')
+            for index, e in enumerate(lines):
+                if index == 0:
+                    continue
+
+                name = e.split(",")[0]
+                user = e.split(",", 2)[1]
+                h.write(f'<li><a href="https://github.com/{user}/{name}">{name}</li>\n')
+            h.write('</ul>\n')
 
     except:
         print('Error: No write Access')
@@ -36,7 +39,7 @@ if __name__ == '__main__':
 
     input_file = 'project-list.csv'
     output_file = 'project-list_js_var.txt'
-    output_file2 = 'project-list_md_index.txt'
+    output_file2 = 'project-list_index.md'
 
     path = os.path.dirname(os.path.abspath(__file__))
 
