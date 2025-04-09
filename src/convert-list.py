@@ -19,16 +19,26 @@ def read_list(path):
             o.writelines(lines)
             o.write('`;\n')
 
-        with open(os.path.join(path, output_file2), 'wt', encoding = 'UTF-8') as h:
-            h.write('<ul>\n')
-            for index, e in enumerate(lines):
-                if index == 0:
-                    continue
+        h = open(os.path.join(path, output_file2), 'wt', encoding = 'UTF-8')
+        p = open(os.path.join(path, output_file3), 'wt', encoding = 'UTF-8')
+        j = open(os.path.join(path, output_file4), 'wt', encoding = 'UTF-8')
 
-                name = e.split(",")[0]
-                user = e.split(",", 2)[1]
-                h.write(f'<li><a href="https://github.com/{user}/{name}">{name}</li>\n')
-            h.write('</ul>\n')
+        h.write('<ul>\n')
+
+        for index, e in enumerate(lines):
+            if index == 0:
+                continue
+
+            name = e.split(",")[0]
+            user = e.split(",", 2)[2].split(",")[0].strip()
+
+            h.write(f'<li><a href="https://github.com/{user}/{name}">{name}</li>\n')
+
+            p.write(f'<!-- {name} --> <a href="https://github.com/{user}/{name}"><img src="https://github-readme-stats.vercel.app/api/pin/?username={user}&theme={theme}&repo={name}" alt="{name}"></a>\n')
+
+            j.write(f'user\n')
+
+        h.write('</ul>\n')        
 
     except:
         print('Error: No write Access')
@@ -37,9 +47,13 @@ def read_list(path):
 # run on execution
 if __name__ == '__main__':
 
+    theme = 'midnight-purple'
+
     input_file = 'project-list.csv'
     output_file = 'project-list_js_var.txt'
     output_file2 = 'project-list_index.md'
+    output_file3 = 'project-list_img.md'
+    output_file4 = 'project-list.txt'
 
     path = os.path.dirname(os.path.abspath(__file__))
 
