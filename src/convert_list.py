@@ -26,7 +26,6 @@ def read_list(path):
         p = open(os.path.join(path, output_file3), 'wt', encoding = 'UTF-8')
         j = open(os.path.join(path, output_file4), 'wt', encoding = 'UTF-8')
         a = open(os.path.join(path, output_file5), 'wt', encoding = 'UTF-8')
-        f = open(os.path.join(path, output_file6), 'wt', encoding = 'UTF-8')
 
         h.write('<ul>\n')
 
@@ -62,7 +61,9 @@ def read_list(path):
         a.write(d_content)
 
         file_info = configparser.ConfigParser()
-        file_info.read(info, encoding = 'UTF-8')
+        file_info.read(os.path.join(path, info), encoding = 'UTF-8')
+
+        f = open(os.path.join(path, output_file6), 'wt', encoding = 'UTF-8')
 
         for section in file_info.sections():
             f.write(f'### [{section}]\n')
