@@ -52,15 +52,26 @@ def create_files(path):
         a.write(c.read() + '\n\n')
 
         for index, e in enumerate(lines):
+            if index % 2 != 0:
+                a.write('<div>\n')
+                div_end = True
+
             if index == 0:
                 continue
 
             name = e.split(",")[0]
             user = e.split(",", 2)[2].split(",")[0].strip()
 
-            a.write(f'<!-- {name} --> <a href="https://github.com/{user}/{name}"><img src="https://github-readme-stats.vercel.app/api/pin/?username={user}&theme={theme}&repo={name}" alt="{name}"></a>\n')
+            a.write(f'    <!-- {name} --> <a href="https://github.com/{user}/{name}"><img src="https://github-readme-stats.vercel.app/api/pin/?username={user}&theme={theme}&repo={name}" alt="{name}"></a>\n')
+
+            if not index % 2 != 0:
+                a.write('</div>\n\n\n')
+                div_end = False
 
             j.write(f'{name}\n')
+        
+        if div_end:
+            a.write('</div>\n')
 
         a.write('\n\n' + d.read() + '\n\n')
         a.write('<ul>\n')
@@ -99,7 +110,7 @@ def create_files(path):
         d.close()
         j.close()
 
-        print("Created all files successfully!")
+        print("\nCreated all files successfully!\n")
 
     except:
         print('Error: No write Access')

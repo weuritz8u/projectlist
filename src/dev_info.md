@@ -1,3 +1,6 @@
+<!-- Develepment Info File -->
+<!-- written by Shadowdara -->
+
 # Develepment Info File
 
 ## How to update
