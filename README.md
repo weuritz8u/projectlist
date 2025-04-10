@@ -12,7 +12,7 @@
 
 <p><b><i>Here is every project which is worth to list!</i></b></p>
 
-<h3>Tools</h3>
+<h3>Usefull scripts</h3>
 
 <div>
      <!-- run-without-admin-rights --> <a href="https://github.com/weuritz8u/run-without-admin-rights"><img src="https://github-readme-stats.vercel.app/api/pin/?username=weuritz8u&theme=midnight-purple&repo=run-without-admin-rights" alt="run-without-admin-rights"></a>
@@ -28,13 +28,18 @@
 
 <div>
 	<!-- 3ma-to-obj-converter-python --> <a href="https://github.com/weuritz8u/3ma-to-obj-converter-python"><img src="https://github-readme-stats.vercel.app/api/pin/?username=weuritz8u&theme=midnight-purple&repo=3ma-to-obj-converter-python" alt="3ma-to-obj-converter-python"></a>
+	<!-- change-file-extension --> <a href="https://github.com/weuritz8u/change-file-extension"><img src="https://github-readme-stats.vercel.app/api/pin/?username=weuritz8u&theme=midnight-purple&repo=change-file-extension" alt="change-file-extension"></a>
 </div>
+
+
+<div></div>
 
 
 <h3>Templates<h3>
 
 <div>
- <!-- Godot-Save-Template --> <a href="https://github.com/weuritz8u/Godot-Save-Template"><img src="https://github-readme-stats.vercel.app/api/pin/?username=weuritz8u&theme=midnight-purple&repo=Godot-Save-Template" alt="Godot-Save-Template"></a>
+	<!-- Godot-Save-Template --> <a href="https://github.com/weuritz8u/Godot-Save-Template"><img src="https://github-readme-stats.vercel.app/api/pin/?username=weuritz8u&theme=midnight-purple&repo=Godot-Save-Template" alt="Godot-Save-Template"></a>
+	<!-- HTML-Template --> <a href="https://github.com/weuritz8u/HTML-Template"><img src="https://github-readme-stats.vercel.app/api/pin/?username=weuritz8u&theme=midnight-purple&repo=HTML-Template" alt="HTML-Template"></a>
 </div>
 
 <!--
@@ -42,7 +47,7 @@
 <h3>Games</h3>
 
 <div>
- <-- ->
+	<-- visualnovel-march-2025 -> <a href="https://github.com/weuritz8u/visualnovel-march-2025"><img src="https://github-readme-stats.vercel.app/api/pin/?username=weuritz8u&theme=midnight-purple&repo=visualnovel-march-2025" alt="visualnovel-march-2025"></a>
 </div>
 
 
