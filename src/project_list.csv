@@ -1,9 +1,9 @@
-Projectname,Language,User,
-Godot-Save-Template,GDScript,weuritz8u,
-3ma-to-obj-converter-python,Python,weuritz8u,
-change-file-edittime,Powershell,weuritz8u,
-local-HTTP-server,Python,weuritz8u,
-read-wlan-password,Batchfile,weuritz8u,
+Projectname,Language,User,Theme,
+Godot-Save-Template,GDScript,weuritz8u,Template,
+3ma-to-obj-converter-python,Python,weuritz8u,Toolscript
+change-file-edittime,Powershell,weuritz8u,Toolscript
+local-HTTP-server,Python,weuritz8u,Toolscript
+read-wlan-password,Batchfile,weuritz8u,Toolscript
 run-without-admin-rights,Batchfile,weuritz8u,
 visualnovel-march-2025,GDScript,weuritz8u,
 change-file-extension,Powershell,weuritz8u,
