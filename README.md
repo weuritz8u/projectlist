@@ -31,17 +31,6 @@
 	<!-- change-file-extension --> <a href="https://github.com/weuritz8u/change-file-extension"><img src="https://github-readme-stats.vercel.app/api/pin/?username=weuritz8u&theme=midnight-purple&repo=change-file-extension" alt="change-file-extension"></a>
 </div>
 
-<!--
-<div></div>
--->
-
-<h3>Templates<h3>
-
-<div>
-	<!-- Godot-Save-Template --> <a href="https://github.com/weuritz8u/Godot-Save-Template"><img src="https://github-readme-stats.vercel.app/api/pin/?username=weuritz8u&theme=midnight-purple&repo=Godot-Save-Template" alt="Godot-Save-Template"></a>
-	<!-- HTML-Template --> <a href="https://github.com/weuritz8u/HTML-Template"><img src="https://github-readme-stats.vercel.app/api/pin/?username=weuritz8u&theme=midnight-purple&repo=HTML-Template" alt="HTML-Template"></a>
-</div>
-
 
 <h3>Websiteprogramms</h3>
 
@@ -51,11 +40,18 @@
 </div>
 
 
+<h3>Templates<h3>
+
+<div>
+	<!-- Godot-Save-Template --> <a href="https://github.com/weuritz8u/Godot-Save-Template"><img src="https://github-readme-stats.vercel.app/api/pin/?username=weuritz8u&theme=midnight-purple&repo=Godot-Save-Template" alt="Godot-Save-Template"></a>
+	<!-- HTML-Template --> <a href="https://github.com/weuritz8u/HTML-Template"><img src="https://github-readme-stats.vercel.app/api/pin/?username=weuritz8u&theme=midnight-purple&repo=HTML-Template" alt="HTML-Template"></a>
+</div>
+
 
 <h3>Games</h3>
 
 <div>
-	<-- visualnovel-march-2025 -> <a href="https://github.com/weuritz8u/visualnovel-march-2025"><img src="https://github-readme-stats.vercel.app/api/pin/?username=weuritz8u&theme=midnight-purple&repo=visualnovel-march-2025" alt="visualnovel-march-2025"></a>
+	<!-- visualnovel-march-2025 --> <a href="https://github.com/weuritz8u/visualnovel-march-2025"><img src="https://github-readme-stats.vercel.app/api/pin/?username=weuritz8u&theme=midnight-purple&repo=visualnovel-march-2025" alt="visualnovel-march-2025"></a>
 </div>
 
 
@@ -86,3 +82,5 @@
 </div>
 
 -->
+
+<p><i>I am trying to autmate this file soon via my <code>Repo Database Creator</code>!</i></p>
