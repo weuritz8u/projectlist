@@ -68,6 +68,12 @@
 </div>
 
 
+<h3>Challenges</h3>
+
+<div>
+	<!-- sloth_bytes_scala --> <a href="https://github.com/shadowdara/sloth_bytes_scala"><img src="https://github-readme-stats.vercel.app/api/pin/?username=shadowdara&theme=midnight-purple&repo=sloth_bytes_scala" alt="sloth_bytes_scala"></a>
+</div>
+
 
 <!--
 
