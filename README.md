@@ -41,15 +41,15 @@
 <h3>Websiteprogramms</h3>
 
 <div>
- 	<!-- Repo Database Creator --> <a href="https://github.com/ShadowDara/repo-database-creator"><img src="https://github-readme-stats.vercel.app/api/pin/?username=shadowdara&theme=midnight-purple&repo=repo-database-creator"></a>
-	<!-- Date Calculator --> <a href="https://github.com/weuritz8u/date-calculator"><img src="https://github-readme-stats.vercel.app/api/pin/?username=shadowdara&theme=midnight-purple&repo=date-calculator"></a>
+ 	<!-- Repo Database Creator --> <a href="https://github.com/ShadowDara/repo-database-creator"><img src="https://github-readme-stats.vercel.app/api/pin/?username=shadowdara&theme=midnight-purple&repo=repo-database-creator" alt="Repo Database Creator"></a>
+	<!-- Date Calculator --> <a href="https://github.com/weuritz8u/date-calculator"><img src="https://github-readme-stats.vercel.app/api/pin/?username=shadowdara&theme=midnight-purple&repo=date-calculator" alt="Date Calculator"></a>
 </div>
 
 
 <h3>Envirments</h3>
 
 <div>
-	<!-- dev-envirment --> <a href="https://github.com/weuritz8u/date-calculator"><img src="https://github-readme-stats.vercel.app/api/pin/?username=shadowdara&theme=midnight-purple&repo=date-calculator"></a>
+	<!-- dev-envirment --> <a href="https://github.com/weuritz8u/dev-envirment"><img src="https://github-readme-stats.vercel.app/api/pin/?username=shadowdara&theme=midnight-purple&repo=dev-envirment" alt="dev-envirment"></a>
 </div>
 
 
