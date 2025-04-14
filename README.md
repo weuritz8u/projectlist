@@ -10,7 +10,7 @@
 
 <h2><a href="https://weuritz8u.github.io/projectlist/">Webpage now working!</a></h2>
 
-<p><b><i>Here is every project which is worth to list!</i></b></p>
+<p><b><i>The Markdown file is now only for Highlights or the Trash</i></b></p>
 
 <h3>Usefull scripts</h3>
 
@@ -120,12 +120,4 @@
 
 -->
 
-<br>
-
-<p><i>I am trying to autmate this file soon via my <code>Repo Database Creator</code>!</i></p>
-
-<br>
-
-<!--
-
--->
+<h2 id="automatedprojectlist">Automated Projectlist</h2>

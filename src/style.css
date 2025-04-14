@@ -162,3 +162,8 @@ a {
 .dropdown:hover .dropbtn {
     background-color: #2980b9;
 }
+
+img {
+    width: 30rem;
+    height: 100%;
+}
