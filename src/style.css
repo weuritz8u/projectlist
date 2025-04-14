@@ -8,29 +8,6 @@
     font-family: Arial, sans-serif;
 }
 
-header {
-    top: 0;
-    position: fixed;
-    width: 100%;
-    margin: 0px;
-    padding: 1rem;
-    background-color: #191919;
-    display: block;
-    unicode-bidi: isolate;
-}
-
-nav {
-    margin-left: 30%;
-    width: 40%;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 10px;
-}
-
-nav p {
-    margin: 0;
-}
-
 body {
     background: linear-gradient(135deg, #1e3c72, #2a5298);
     color: white;
@@ -45,13 +22,29 @@ main {
     margin: 5rem;
 }
 
+header {
+    margin: 0px;
+    padding: 0.5rem;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #191919;
+    text-align: right;
+}
+
 footer {
     margin: 0px;
-    padding-bottom: 1rem;
+    padding: 0.5rem;
     bottom: 0;
     position: fixed;
     width: 100%;
     background-color: #191919;
+}
+
+header p, footer p {
+    display: inline;
+    font-size: 1.1rem;
+    margin: 0 5% auto;
 }
 
 h2 {
