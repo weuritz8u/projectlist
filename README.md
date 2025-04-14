@@ -8,7 +8,7 @@
 <h3>🚨🚨🚨</h3>
 <h1>full Project List</h1>
 
-<h2><a href="https://weuritz8u.github.io/projectlist/">Webpage</a></h2>
+<h2><a href="https://weuritz8u.github.io/projectlist/">Webpage now working!</a></h2>
 
 <p><b><i>Here is every project which is worth to list!</i></b></p>
 
