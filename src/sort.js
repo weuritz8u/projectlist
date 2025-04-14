@@ -37,9 +37,47 @@ async function display_list() {
     createTableFromCSV(list);
 }
 
-async function  display_list_pic() {
-    const list = await load_data();
-    if (!list) return;
-    document.getElementById('data_paste').innerHTML = '<div></div>'
+async function display_list_pic() {
+    const csvText = await load_data();
+    if (!csvText) return;
+
+    const username = getUsernameFromURL();
+
+    const rows = csvText.trim().split("\n").map(row => {
+        return row.match(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g)?.map(cell =>
+            cell.replace(/^"(.*)"$/, "$1").replace(/""/g, '"').trim()
+        ) ?? [];
+    });
+
+    const [header, ...dataRows] = rows;
+
+    const container = document.getElementById('data_paste');
+    container.innerHTML = '';
+
+    dataRows.forEach(row => {
+        const repoName = row[0];
+        if (!repoName) return;
+
+        const card = createGitHubCard(username, repoName);
+        container.appendChild(card);
+    });
 }
 
+function createGitHubCard(username, repo, theme = "midnight-purple") {
+    const a = document.createElement("a");
+    a.href = `https://github.com/${username}/${repo}`;
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+
+    const img = document.createElement("img");
+    img.src = `https://github-readme-stats.vercel.app/api/pin/?username=${username}&theme=${theme}&repo=${repo}`;
+    img.alt = repo;
+
+    a.appendChild(img);
+    return a;
+}
+
+function getUsernameFromURL() {
+    const params = new URLSearchParams(window.location.search);
+    return params.get("user") || "weuritz8u";
+}
