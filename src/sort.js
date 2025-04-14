@@ -37,6 +37,7 @@ async function display_list() {
     createTableFromCSV(list);
 }
 
+// für die liste mit bildern!
 async function display_list_pic() {
     const csvText = await load_data();
     if (!csvText) return;
