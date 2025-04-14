@@ -1,17 +1,21 @@
-const list = `Name,Language,User
-Godot-Save-Template,GDScript,weuritz8u
-3ma-to-obj-converter-python,Python,weuritz8u
-change-file-edittime,Powershell,weuritz8u
-local-HTTP-server,Python,weuritz8u
-read-wlan-password,Batchfile,weuritz8u
-run-without-admin-rights,Batchfile,weuritz8u
-visualnovel-march-2025,GDScript,weuritz8u
-`;
+// Script written by Shadowdara
 
+// Holt CSV-Daten von der API
+async function load_data() {
+    try {
+        const response = await fetch("https://repo-database-creator.vercel.app/api/repos_raw");
+        console.log("Antwort Status:", response.status);
+        console.log("Antwort Header:", response.headers);
+        const html = await response.text();
+        console.log("Antwort Inhalt:", html);
+        return html;
+    } catch (err) {
+        console.error("Fehler:", err);
+        return null;
+    }
+}
 
-// script written by Shadowdara
-
-// to read the csv table
+// Liest eine lokale CSV-Datei ein
 document.getElementById('csvFileInput').addEventListener('change', function(event) {
     const file = event.target.files[0];
     if (!file) return;
@@ -24,9 +28,16 @@ document.getElementById('csvFileInput').addEventListener('change', function(even
     reader.readAsText(file);
 });
 
-
+// Erstellt eine HTML-Tabelle aus CSV-Text
 function createTableFromCSV(csvText) {
-    const rows = csvText.trim().split("\n").map(row => row.split(","));
+    const rows = csvText.trim().split("\n").map(row => {
+        // Felder entschachteln ("escaped") und Kommas in Anführungszeichen beachten
+        return row.match(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g)?.map(cell => {
+            // Entferne umschließende Anführungszeichen und ersetze doppelte Anführungszeichen
+            return cell.replace(/^"(.*)"$/, '$1').replace(/""/g, '"').trim();
+        }) ?? [];
+    });
+
     const table = document.getElementById("csvTable");
     table.innerHTML = "";
 
@@ -35,7 +46,7 @@ function createTableFromCSV(csvText) {
 
         row.forEach(cell => {
             const cellElement = rowIndex === 0 ? document.createElement("th") : document.createElement("td");
-            cellElement.textContent = cell.trim();
+            cellElement.textContent = cell;
             tr.appendChild(cellElement);
         });
 
@@ -43,8 +54,11 @@ function createTableFromCSV(csvText) {
     });
 }
 
-function display_list() {
-    document.getElementById('table_paste').innerHTML = '<div class="table_container"><table id="csvTable"></table></div>'
+// Holt remote CSV und zeigt sie als Tabelle an
+async function display_list() {
+    const list = await load_data();
+    if (!list) return;
 
+    document.getElementById('table_paste').innerHTML = '<div class="table_container"><table id="csvTable"></table></div>';
     createTableFromCSV(list);
 }

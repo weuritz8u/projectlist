@@ -50,6 +50,7 @@
 
 <div>
 	<!-- Start-Terminal --> <a href="https://github.com/weuritz8u/start-Terminal"><img src="https://github-readme-stats.vercel.app/api/pin/?username=shadowdara&theme=midnight-purple&repo=start-Terminal" alt="Start-Terminal"></a>
+	<!-- config-file-creator --> <a href="https://github.com/weuritz8u/config-file-creator"><img src="https://github-readme-stats.vercel.app/api/pin/?username=shadowdara&theme=midnight-purple&repo=config-file-creator" alt="config-file-creator"></a>
 </div>
 
 
@@ -84,10 +85,11 @@
 </div>
 
 
-<h3>Challenges</h3>
+<h3>Challenges and other Stuff!</h3>
 
 <div>
 	<!-- sloth_bytes_scala --> <a href="https://github.com/shadowdara/sloth_bytes_scala"><img src="https://github-readme-stats.vercel.app/api/pin/?username=shadowdara&theme=midnight-purple&repo=sloth_bytes_scala" alt="sloth_bytes_scala"></a>
+	<!-- data-mess --> <a href="https://github.com/shadowdara/data-mess"><img src="https://github-readme-stats.vercel.app/api/pin/?username=shadowdara&theme=midnight-purple&repo=data-mess" alt="data-mess"></a>
 </div>
 
 

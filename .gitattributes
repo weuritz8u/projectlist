@@ -1,9 +1,2 @@
 *.md linguist-detectable=true
 *.md linguist-documentation=false
-*.ini linguist-detectable=true
-*.ini linguist-documentation=false
-*.csv linguist-detectable=true
-*.csv linguist-documentation=false
-*.txt linguist-detectable=true
-*.txt linguist-documentation=false
-*.tp linguist-language=txt

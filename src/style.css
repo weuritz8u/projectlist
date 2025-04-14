@@ -39,12 +39,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    padding: 20px;
 }
 
 main {
-
+    margin: 5rem;
 }
 
 footer {
@@ -60,26 +58,6 @@ h2 {
     margin-bottom: 20px;
     font-size: 24px;
 }
-
-/*
-
-.date-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-input[type="date"] {
-    padding: 10px;
-    font-size: 18px;
-    border: none;
-    border-radius: 10px;
-    text-align: center;
-    outline: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-*/
 
 table {
     padding-top: 0px;
