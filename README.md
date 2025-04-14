@@ -46,6 +46,13 @@
 </div>
 
 
+<h3>Shortcuts</h3>
+
+<div>
+	<!-- Start-Terminal --> <a href="https://github.com/weuritz8u/start-Terminal"><img src="https://github-readme-stats.vercel.app/api/pin/?username=shadowdara&theme=midnight-purple&repo=start-Terminal" alt="Start-Terminal"></a>
+</div>
+
+
 <h3>Envirments</h3>
 
 <div>
