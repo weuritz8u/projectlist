@@ -72,9 +72,7 @@
 
 <h3>Websites</h3>
 
-<div>
-	<a href="https://github.com/weuritz8u/HTML-Template"><img src="https://github-readme-stats.vercel.app/api/pin/?username=weuritz8u&theme=midnight-purple&repo=HTML-Template" alt="HTML-Template"></a>
-</div>
+<div></div>
 
 -->
 
